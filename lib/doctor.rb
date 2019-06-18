@@ -13,8 +13,8 @@ def initialize(name)
   @@all << self 
 end
 
-def new_appointment(name, date)
-  self.Patient.new(name, date)
+def new_appointment(date, patient)
+  self.Appointment
 
 end 
 
