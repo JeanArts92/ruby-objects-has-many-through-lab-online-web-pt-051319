@@ -14,7 +14,7 @@ def initialize(name)
 end
 
 def new_appointment(patient, date)
-  Appointment.new(name)
+  self.Appointment(name)
 
 end 
 
