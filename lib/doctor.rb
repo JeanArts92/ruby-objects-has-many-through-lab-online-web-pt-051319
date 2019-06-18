@@ -13,7 +13,7 @@ def initialize(name)
   @@all << self 
 end
 
-def new_appointment(name)
+def new_appointment(name, date)
   self.Patient.new(name, date)
 
 end 
