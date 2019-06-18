@@ -22,4 +22,6 @@ def appointments
   
 end 
 
+def patients
+
 end 
