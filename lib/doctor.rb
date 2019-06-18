@@ -14,8 +14,7 @@ def initialize(name)
 end
 
 def new_appointment(patient, date)
-  binding.pry
-  Appointment.new(self)
+  Appointment.new(name)
 
 end 
 
