@@ -1,7 +1,7 @@
 require 'pry'
 
 class Doctor 
-  attr_accessor :name, :date, :patient
+  attr_accessor :name
   @@all = [] 
   
 def self.all
@@ -14,7 +14,16 @@ def initialize(name)
 end
 
 def new_appointment(patient, date)
-  Appointment.new(self)
+  Appointment.new(date, patient, self)
 end 
+
+def appointments
+  Appointment.all.select{|s| s.doctor == self}
+  
+end 
+
+def patients
+  appointments.collect{|a| a.patient}
+end
 
 end 
