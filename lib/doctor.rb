@@ -1,7 +1,7 @@
 require 'pry'
 
 class Doctor 
-  attr_accessor :name, :date, :patient
+  attr_accessor :name
   @@all = [] 
   
 def self.all
