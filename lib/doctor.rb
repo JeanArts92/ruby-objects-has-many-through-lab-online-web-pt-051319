@@ -13,7 +13,7 @@ def initialize(name)
   @@all << self 
 end
 
-def new_appointment(patient, date)
+def new_appointment(patient)
   binding.pry
   Appointment.new(self)
 
