@@ -23,6 +23,7 @@ class Patient
  
  def doctors 
    self.all.collect{|d| d.doctor}
+ end 
   
     
 end 
